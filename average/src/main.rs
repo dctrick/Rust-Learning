@@ -12,7 +12,7 @@ fn main() {
         .split_whitespace()
         .map(|s| s.parse().expect("Not a number"))
         .collect();
-    let no_of_elements = numbers.iter().count();
+    let no_of_elements = numbers.len();
     let mut sum = 0;
     for n in &numbers {
         sum = sum + n;
